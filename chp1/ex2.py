@@ -15,5 +15,6 @@ def is_permutation(str1, str2):
             return False
     return True
 
-assert(is_permutation("Hello", "elloH"))
-assert(not is_permutation("Hella", "elloH"))
+
+assert is_permutation("Hello", "elloH")
+assert not is_permutation("Hella", "elloH")

@@ -19,8 +19,3 @@ def is_palindrome_permutation(word):
                 return False
             odd_letter_count = True
     return True
-
-
-assert is_palindrome_permutation("kayak")
-assert not is_palindrome_permutation("ka")
-assert is_palindrome_permutation("Tact Coa")

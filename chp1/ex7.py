@@ -33,14 +33,3 @@ def rotate_in_place(image):
             for i in range(3):
                 set_point(image, points[i], get_point(image, points[i + 1]))
             set_point(image, points[-1], first)
-
-
-def test_rotate_in_place():
-    src = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-    out = [[3, 6, 9], [2, 5, 8], [1, 4, 7]]
-
-    rotate_in_place(src)
-    assert src == out
-
-
-test_rotate_in_place()

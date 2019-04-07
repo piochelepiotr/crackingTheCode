@@ -13,7 +13,3 @@ def k_last_element(head, k):
         klast = klast.next
         node = node.next
     return klast.value
-
-
-assert k_last_element(linked_list.from_list([1, 2, 3, 4, 5]), 1) == 5
-assert k_last_element(linked_list.from_list([1, 2, 1, 4, 5]), 3) == 1

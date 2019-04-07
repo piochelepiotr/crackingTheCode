@@ -14,7 +14,3 @@ def is_permutation(str1, str2):
         if occurences[c] != 0:
             return False
     return True
-
-
-assert is_permutation("Hello", "elloH")
-assert not is_permutation("Hella", "elloH")

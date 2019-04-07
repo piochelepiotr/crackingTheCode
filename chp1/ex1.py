@@ -14,10 +14,3 @@ def has_uniq_characters_without_datastructure(str):
             if str[j] == c:
                 return False
     return True
-
-
-assert not has_uniq_characters("Hello")
-assert has_uniq_characters("World")
-
-assert not has_uniq_characters_without_datastructure("Hello")
-assert has_uniq_characters_without_datastructure("World")

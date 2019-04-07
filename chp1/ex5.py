@@ -36,9 +36,3 @@ def is_one_replace_away(word1: str, word2: str) -> bool:
 
 def is_one_operation_away(word1: str, word2: str) -> bool:
     return is_one_remove_away(word1, word2) or is_one_replace_away(word1, word2)
-
-
-assert(is_one_operation_away("hey", "hay"))
-assert(is_one_operation_away("heyo", "hey"))
-assert(is_one_operation_away("hey", "heyo"))
-assert(not is_one_operation_away("heyo", "hay"))

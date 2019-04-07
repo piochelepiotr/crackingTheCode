@@ -15,6 +15,3 @@ def get_compressed_word(word: str) -> str:
     if len(compressed_word) >= len(word):
         return word
     return compressed_word
-
-
-assert get_compressed_word("aaaabbccc") == "4a2b3c"

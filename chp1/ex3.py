@@ -16,8 +16,3 @@ def URLify(str, n):
         else:
             str[j] = str[i]
             j -= 1
-
-
-s = list("Mr John Smith    ")
-URLify(s, 13)
-assert "".join(s) == "Mr%20John%20Smith"

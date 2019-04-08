@@ -3,6 +3,12 @@ class Node:
         self.value = value
         self.next = next
 
+    def __eq__(self, other):
+        return to_list(self) == to_list(other)
+
+    def __repr__(self):
+        return str(to_list(self))
+
 
 def from_list(L):
     node = None

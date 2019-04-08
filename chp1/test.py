@@ -7,6 +7,7 @@ import ex5
 import ex6
 import ex7
 import ex8
+import ex9
 
 
 class Testing(unittest.TestCase):
@@ -50,3 +51,7 @@ class Testing(unittest.TestCase):
         expected = [[0, 0, 3], [0, 0, 0], [0, 0, 0], [0, 0, 9]]
         ex8.set_to_0(src)
         self.assertEqual(src, expected)
+
+    def test_ex9(self):
+        self.assertTrue(ex9.is_rotation("waterbottle", "erbottlewat"))
+        self.assertFalse(ex9.is_rotation("waterbattle", "erbottlewat"))

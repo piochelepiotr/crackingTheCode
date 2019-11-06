@@ -12,7 +12,7 @@ def sum_lists(l1, l2, carry=0):
             return l.value, l.next
     l1_value, l1_next = expand_list(l1)
     l2_value, l2_next = expand_list(l2)
-    s = l1_value + l2_value + carry
+    s = divmod(l1_value + l2_value + carry, 10)
     passed_carry = 0
     if s >= 10:
         s -= 10

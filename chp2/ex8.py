@@ -1,15 +1,8 @@
-def is_in_list(L, v):
-    for x in L:
-        if x is v:
-            return True
-    return False
-
-
 def find_loop(L):
-    nodes = []
+    nodes = set()
     while L is not None:
-        if is_in_list(nodes, L):
+        if L in nodes:
             return L
-        nodes.append(L)
+        nodes.add(L)
         L = L.next
     return None

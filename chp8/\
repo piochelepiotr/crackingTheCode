@@ -1,0 +1,15 @@
+def bool_exp(s, result):
+    if s == "":
+        return 
+    c = 0
+    # only odd indexes have an operator
+    for i in range(1, len(s), 2):
+        left = s[:i]
+        right = s[i+1:]
+        leftTrue = bool_exp(left, True)
+        leftFalse = bool_exp(left, False)
+        rightTrue = bool_exp(right, True)
+        rightFalse = bool_exp(right, False)
+        totalLeft = leftTrue + leftFalse
+        totalRight = rightTrue + rightFalse
+        total = totalLeft * totalRight
